@@ -16,7 +16,7 @@ import seedu.addressbook.storage.StorageFile.StorageOperationException;
 import seedu.addressbook.storage.StorageFile.StorageReadOnlyException;
 import seedu.addressbook.ui.TextUi;
 
-import static seedu.addressbook.storage.StorageFile.READ_ONLY_EXCEPTION_Message;
+import static seedu.addressbook.common.Messages.READ_ONLY_EXCEPTION_Message;
 /**
  * Entry point of the Address Book application.
  * Initializes the application and starts the interaction with the user.
