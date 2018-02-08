@@ -29,6 +29,7 @@ public class StorageFile {
     /** Default file path used if the user doesn't provide the file name. */
     public static final String DEFAULT_STORAGE_FILEPATH = "addressbook.xml";
 
+    public static final String READ_ONLY_EXCEPTION_Message = "You cannot make the file read only while it is running.";
     /* Note: Note the use of nested classes below.
      * More info https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
      */
@@ -48,6 +49,16 @@ public class StorageFile {
      */
     public static class StorageOperationException extends Exception {
         public StorageOperationException(String message) {
+            super(message);
+        }
+    }
+
+    /**
+     * Signals that some error has occured while trying to makes the storage file read only
+     * while the program is running
+     */
+    public static class StorageReadOnlyException extends Exception {
+        public StorageReadOnlyException(String message) {
             super(message);
         }
     }
@@ -106,7 +117,7 @@ public class StorageFile {
             marshaller.marshal(toSave, fileWriter);
 
         } catch (IOException ioe) {
-            throw new StorageOperationException("Error writing to file: " + path);
+            throw new StorageReadOnlyException("Error writing to file: " + path);
         } catch (JAXBException jaxbe) {
             throw new StorageOperationException("Error converting address book into storage format");
         }
