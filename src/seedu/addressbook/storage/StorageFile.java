@@ -29,7 +29,6 @@ public class StorageFile {
     /** Default file path used if the user doesn't provide the file name. */
     public static final String DEFAULT_STORAGE_FILEPATH = "addressbook.xml";
 
-    public static final String READ_ONLY_EXCEPTION_Message = "You cannot make the file read only while it is running.";
     /* Note: Note the use of nested classes below.
      * More info https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
      */
@@ -57,7 +56,7 @@ public class StorageFile {
      * Signals that some error has occured while trying to makes the storage file read only
      * while the program is running
      */
-    public static class StorageReadOnlyException extends Exception {
+    public static class StorageReadOnlyException extends StorageOperationException {
         public StorageReadOnlyException(String message) {
             super(message);
         }
