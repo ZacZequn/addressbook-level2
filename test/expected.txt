@@ -327,14 +327,14 @@
 || Enter command: || [Command entered:  list]
 || 	1. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
 || 	2. Adam Brown Phone: 666666 Email: adam2@gmail.com Address: 222, alphasss street Tags:
-|| 
+||
 || 2 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  clear]
 || Address book has been cleared!
 || ===================================================
 || Enter command: || [Command entered:  list]
-|| 
+||
 || 0 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  exit]
