@@ -141,6 +141,24 @@
   list
 
 ##########################################################
+# test sort command
+##########################################################
+
+  # last active view: [1] betsy [2] dickson
+
+  # add Esther
+  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
+
+  # should give an out of order list
+  list
+
+  # sorts the out of order list
+  sort
+
+  # should give an ordered list
+  list
+
+##########################################################
 # test clear command
 ##########################################################
 
