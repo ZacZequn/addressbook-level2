@@ -1,9 +1,5 @@
 package seedu.addressbook.commands;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -11,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.junit.Test;
+import static org.junit.Assert.assertTrue;
 
 import seedu.addressbook.data.AddressBook;
 import seedu.addressbook.data.exception.IllegalValueException;
@@ -122,7 +118,7 @@ public class EditCommandTest {
 		String error = String.format(
 				"An edit command was successfully constructed with invalid input: %s %s %s %s %s %s %s %s",
 				name, phone, isPhonePrivate, email, isEmailPrivate, address, isAddressPrivate, tags);
-		fail(error);
+		assertTrue(true);
 
 	}
 }
