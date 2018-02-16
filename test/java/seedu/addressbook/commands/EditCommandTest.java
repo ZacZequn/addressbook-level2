@@ -20,7 +20,7 @@ import seedu.addressbook.data.person.ReadOnlyPerson;
 import seedu.addressbook.data.person.UniquePersonList;
 import seedu.addressbook.util.TestUtil;
 
-public class EditCommandTest {
+public class EditCommandTest extends Command {
 
 	private static final List<ReadOnlyPerson> EMPTY_PERSON_LIST = Collections.emptyList();
 
