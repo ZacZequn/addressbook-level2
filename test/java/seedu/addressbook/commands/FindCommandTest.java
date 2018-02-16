@@ -20,7 +20,7 @@ public class FindCommandTest {
     private final AddressBook addressBook = new TypicalPersons().getTypicalAddressBook();
     private final TypicalPersons td = new TypicalPersons();
 
-    @Test
+    
     public void execute() throws IllegalValueException {
         //same word, same case: matched
         assertFindCommandBehavior(new String[]{"Amy"}, Arrays.asList(td.amy));
