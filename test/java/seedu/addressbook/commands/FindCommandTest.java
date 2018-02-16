@@ -20,13 +20,13 @@ public class FindCommandTest {
     private final AddressBook addressBook = new TypicalPersons().getTypicalAddressBook();
     private final TypicalPersons td = new TypicalPersons();
 
-    
+
     public void execute() throws IllegalValueException {
         //same word, same case: matched
         assertFindCommandBehavior(new String[]{"Amy"}, Arrays.asList(td.amy));
 
         //same word, different case: not matched
-        assertFindCommandBehavior(new String[]{"aMy"}, Arrays.asList(td.amy))
+        assertFindCommandBehavior(new String[]{"aMy"}, Arrays.asList(td.amy));
 
         //partial word: not matched
         assertFindCommandBehavior(new String[]{"my"}, Collections.emptyList());
