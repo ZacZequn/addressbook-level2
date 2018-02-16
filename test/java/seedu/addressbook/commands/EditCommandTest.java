@@ -27,7 +27,6 @@ public class EditCommandTest {
 	private static final Set<String> EMPTY_STRING_LIST = Collections.emptySet();
 
 
-	@Test
 
 
 	public void editCommand_invalidName_throwsException() {
@@ -41,7 +40,7 @@ public class EditCommandTest {
 	}
 
 
-	@Test
+
 
 
 	public void editCommand_invalidPhone_throwsException() {
@@ -55,7 +54,7 @@ public class EditCommandTest {
 	}
 
 
-	@Test
+
 
 
 	public void editCommand_invalidEmail_throwsException() {
@@ -69,7 +68,7 @@ public class EditCommandTest {
 
 	}
 
-	@Test
+
 
 
 	public void editCommand_invalidAddress_throwsException() {
@@ -83,7 +82,7 @@ public class EditCommandTest {
 	}
 
 
-	@Test
+
 
 
 	public void editCommand_invalidTags_throwsException() {
